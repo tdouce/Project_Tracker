@@ -53,3 +53,5 @@ The script should be set to run as a scheduled task on a computer that has writi
 to the server.  I suggest running the script during the night.  The following
 morning an updated and accurate google map is generated, displaying sites that
 'have been sampled' and sites that 'have not been sampled'.
+
+This script was developed in coordination with Jeremiah Blondeau - jblondeau@gmail.com
