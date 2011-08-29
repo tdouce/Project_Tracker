@@ -334,6 +334,8 @@ class ProjectTracker:
             extent_lat = [ max(lat_integers), min(lat_integers), min(lat_integers), max(lat_integers)]
             extent_long = [ min(long_integers), min(long_integers), max(long_integers), max(long_integers) ]
 
+            # Not the exact center depending of size of polygon and nearness t
+            # poles
             lat = sum( extent_lat )/ len(extent_lat)
             long = sum( extent_long )/len(extent_long)
 
