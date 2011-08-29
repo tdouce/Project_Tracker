@@ -7,13 +7,16 @@ Prequisites:
 You will need to download and install the Google Data Python Libraray
 http://code.google.com/apis/gdata/articles/python_client_lib.html
 
-Context:
+Context for use:
 For example, imagine a group of scientists/orginazations sampling 1000 sites
 (individual locations) across a wide geographic area during the same time period. 
 The problem that arises is the coordination of efforts.  Each organization needs to know what sites
 each other organization checked the previous day so there is no duplication of
-effort and sampling.  This script was written to help reduce duplication and 
-smooth the collaboration process using open source tools.
+effort, sampling, or misscommunication.  This approach uses a centralized data
+storage (Google Docs) so there are no versioning problems and every organization
+has the latest and most updated information. This script was written to help reduce 
+the duplication of efforts and smooth the collaboration process using free and open source tools. The script
+generates an up-to-date Google map of what sites have and have not been sampled.
 
 How it works:
 A google spreadsheet is used a quasi 'database' backend.  All the sites that are
