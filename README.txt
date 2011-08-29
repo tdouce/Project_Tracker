@@ -1,9 +1,11 @@
 This python script is meant to help project tracking using Google Maps
 as a visualization tool and using Google Docs (spreadsheet) as a quasi database
-backend.
-
-The script was built with the scientific community in mind, but I am sure other
+backend.  The script was built with the scientific community in mind, but I am sure other
 applications exist.  
+
+Prequisites:
+You will need to download and install the Google Data Python Libraray
+http://code.google.com/apis/gdata/articles/python_client_lib.html
 
 Context:
 For example, imagine a group of scientists/orginazations sampling 1000 sites
