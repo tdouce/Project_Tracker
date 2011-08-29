@@ -8,7 +8,7 @@ You will need to download and install the Google Data Python Libraray
 http://code.google.com/apis/gdata/articles/python_client_lib.html
 
 Context for use:
-For example, imagine a group of scientists/orginazations sampling 1000 sites
+For example, imagine a group of scientists/orginazations, let's say 30 or so, sampling 1000 sites
 (individual locations) across a wide geographic area during the same time period. 
 A problem with the coordination of efforts arises.  Each organization needs to know what sites
 each other organization checked the previous day so there is no duplication of
