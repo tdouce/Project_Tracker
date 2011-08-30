@@ -123,7 +123,7 @@ class ProjectTracker:
 
         self.today = ''
         self.lat_holder = []
-        self.long_holder = []
+        self.longit_holder = []
         self.number_done = []
         self.number_notdone = []
 
@@ -230,7 +230,7 @@ class ProjectTracker:
                     
                 coords = mark[-2:]
                 lat = coords[1]
-                long = coords[0]
+                longit = coords[0]
 
 
                 f.write(
@@ -260,14 +260,14 @@ class ProjectTracker:
 
                 f.write(
                     '<Point>\n' + 
-                            '<coordinates>%s,%s,0</coordinates>\n' % (lat,long) +
+                            '<coordinates>%s,%s,0</coordinates>\n' % (lat,longit) +
                     '</Point>\n'
                     '</Placemark>\n'
                     )
 
 
                 self.lat_holder.append( lat )
-                self.long_holder.append( long )
+                self.longit_holder.append( longit )
 
 
             f.write('</Document>\n'
@@ -296,7 +296,7 @@ class ProjectTracker:
 
             google_map_key = 'AlaksdflkjASDFGASSDFlkasdfoijqlkasdflkj@$#%$#SADFZ_4AQ'
 
-        map_center - The latitude and longitude coordinate where your map will
+        map_center - The latitude and longititude coordinate where your map will
         be centered.  You can pass in a latitude and logitude or you can pass
         in 'auto_generate' and the map's center will be automatically
         generated. For example:
@@ -324,22 +324,22 @@ class ProjectTracker:
         if kwargs.has_key('map_center') and kwargs['map_center'] == 'auto_generate':
 
             lat_integers = [ float(lat) for lat in self.lat_holder ]
-            long_integers = [ float(long) for long in self.long_holder ]
+            longit_integers = [ float(longit) for longit in self.longit_holder ]
 
             max_lat = max(lat_integers)
             min_lat = min(lat_integers)
-            max_long = max(long_integers)
-            min_long = min(long_integers)
+            max_longit = max(longit_integers)
+            min_longit = min(longit_integers)
 
             extent_lat = [ max(lat_integers), min(lat_integers), min(lat_integers), max(lat_integers)]
-            extent_long = [ min(long_integers), min(long_integers), max(long_integers), max(long_integers) ]
+            extent_longit = [ min(longit_integers), min(longit_integers), max(longit_integers), max(longit_integers) ]
 
             # Not the exact center depending of size of polygon and nearness t
             # poles
             lat = sum( extent_lat )/ len(extent_lat)
-            long = sum( extent_long )/len(extent_long)
+            longit = sum( extent_longit )/len(extent_longit)
 
-            map_center = str(long) + ',' + str(lat)
+            map_center = str(longit) + ',' + str(lat)
 
         elif kwargs.has_key('map_center'):
             map_center = kwargs['map_center']
@@ -386,8 +386,8 @@ var toggleStatenotDoneKml = 0;  // declare variable and Set toggle state
         
     function initialize() {
       if (GBrowserIsCompatible()) {
-        doneKml = new GGeoXml("%s"); // link to kml, converted from a shapefile 
-        notDoneKml =  new GGeoXml("%s"); // link to kml, converted from a shapefile
+        doneKml = new GGeoXml("%s"); // link to kml
+        notDoneKml =  new GGeoXml("%s"); // link to kml
  
         // Map Controls
         map = new GMap2(document.getElementById("map_canvas")); // Google API code: generates map canvas
