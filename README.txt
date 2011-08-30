@@ -44,7 +44,7 @@ stationid, Completed, Site Name, County, DateStart, DateEnd, Latitude, Longitude
 
 
 The project flow would be as follows:
-All the sampling sites are written to the google spreadsheet. All organization
+All the sampling sites are written to the google spreadsheet. All organizations
 begin sampling. Each organization has access to the gmail email address and password. 
 At the end of each day, each organziation updates the column that holds the information 
 on whether about whether or not the site'has been completed' or 'has not been completed', i.e.
