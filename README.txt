@@ -10,7 +10,7 @@ http://code.google.com/apis/gdata/articles/python_client_lib.html
 Context:
 For example, imagine a group of scientists/orginazations sampling 1000 sites
 (individual locations) across a wide geographic area during the same time period. 
-The problem that arises is the coordination of efforts.  Each organization needs to know what sites
+A problem with the coordination of efforts arises.  Each organization needs to know what sites
 each other organization checked the previous day so there is no duplication of
 effort and sampling.  This script was written to help reduce duplication and 
 smooth the collaboration process using open source tools.
