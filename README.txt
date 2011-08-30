@@ -9,14 +9,16 @@ http://code.google.com/apis/gdata/articles/python_client_lib.html
 
 Context for use:
 For example, imagine a group of scientists/orginazations, let's say 30 or so, sampling 1000 sites
-(individual locations) across a wide geographic area during the same time period. 
-A problem with the coordination of efforts arises.  Each organization needs to know what sites
-each other organization checked the previous day so there is no duplication of
-effort, sampling, or misscommunication.  This approach uses a centralized data
-storage (Google Docs) so there are no versioning problems and every organization
-has the latest and most updated information. This script was written to help reduce 
-the duplication of efforts and smooth the collaboration process using free and open source tools. The script
-generates an up-to-date Google map of what sites have and have not been sampled.
+(individual locations) across a wide geographic area, let's say 30 square miles
+or so, during the same time period.  A problem with the coordination of efforts arises.  
+Each organization needs to know what sites each other 
+organization checked the previous day so there is no duplication of effort, sampling, or misscommunication.  
+This script was written to help reduce the duplication of efforts and smooth the collaboration 
+process using free and open source tools. This approach uses a centralized data
+storage (Google Docs) which doubles as version control. The script
+generates an up-to-date Google map of what sites have and have not been
+sampled, using the data from the Google Doc.  This ensures that every
+organization is operating on the latest and most updated information.  
 
 How it works:
 A google spreadsheet is used a quasi 'database' backend.  All the sites that are
@@ -45,7 +47,7 @@ stationid, Completed, Site Name, County, DateStart, DateEnd, Latitude, Longitude
 
 The project flow would be as follows:
 All the sampling sites are written to the google spreadsheet. All organizations
-begin sampling. Each organization has access to the gmail email address and password. 
+begin sampling. Each organization has writting access to the gmail email address and password. 
 At the end of each day, each organziation updates the column that holds the information 
 on whether about whether or not the site'has been completed' or 'has not been completed', i.e.
 changing the 'y' to a 'n' (or whatever convention is settled on by all organizations).  
