@@ -12,8 +12,8 @@ For example, imagine a group of scientists/orginazations, let's say 30 or so, sa
 (individual locations) across a wide geographic area, let's say 30 square miles
 or so, during the same time period.  A problem with the coordination of efforts arises.  
 Each organization needs to know what sites each other 
-organization checked the previous day so there is no duplication of effort, sampling, or misscommunication.  
-This script was written to help reduce the duplication of efforts and smooth the collaboration 
+organization checked the previous day so there is no duplication of effort, sampling, or misscommunication.  This 
+script was written to help reduce the duplication of efforts and smooth the collaboration 
 process using free and open source tools. This approach uses a centralized data
 storage (Google Docs) which doubles as version control. The script
 generates an up-to-date Google map of what sites have and have not been
